@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | EarthCraft Pottery Studio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+<header>
+
+    <div class="container">
+
+        <nav class="navbar">
+            <div class="logo">
+
+                <a href="#">EarthCraft</a>
+
+            </div>
+
+            <!-- Menu -->
+
+            <ul class="nav-menu">
+
+                <li><a href="#" class="active">Home</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="shop.html">Shop</a></li>
+
+                <li><a href="gallery.html">Gallery</a></li>
+
+                <li><a href="services.html">Services</a></li>
+
+                <li><a href="blog.html">Blog</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <!-- Button -->
+
+            <a href="#" class="nav-btn">
+
+                Shop Now
+
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<!--==================== HERO SECTION START ====================-->
+
+<section class="gallery-hero">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <span class="hero-tag">
+                ✨ Handmade • Traditional • Premium
+            </span>
+
+            <h1>
+                Explore Our <span>Pottery Gallery</span>
+            </h1>
+
+            <p>
+                Discover handcrafted clay pots, ceramic vases, kulhads, diyas,
+                planters and unique pottery collections made by skilled Indian
+                artisans with love and tradition.
+            </p>
+
+            <div class="hero-btns">
+
+                <a href="shop.html" class="btn">
+                    Explore Collection
+                </a>
+
+                <a href="#gallery" class="btn2">
+                    View Gallery
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--==================== HERO SECTION END ====================-->
+<!--==================== SEARCH & FILTER START ====================-->
+
+<section class="gallery-tools">
+
+    <div class="container">
+
+        <div class="gallery-heading">
+
+            <span>Our Collection</span>
+
+            <h2>Browse Handmade Pottery</h2>
+
+            <p>
+                Find your favorite handcrafted pottery items by searching
+                or selecting a category below.
+            </p>
+
+        </div>
+
+        <!-- Search -->
+
+        <div class="gallery-search">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="gallerySearch"
+                placeholder="Search pottery...">
+
+        </div>
+
+        <!-- Filter -->
+
+        <div class="filter-buttons">
+
+    <button class="filter-btn active"
+            data-filter="all">
+
+        All
+
+    </button>
+
+    <button class="filter-btn"
+            data-filter="pots">
+
+        Pots
+
+    </button>
+
+    <button class="filter-btn"
+            data-filter="cups">
+
+        Kulhad
+
+    </button>
+
+    <button class="filter-btn"
+            data-filter="vases">
+
+        Vases
+
+    </button>
+
+    <button class="filter-btn"
+            data-filter="plates">
+
+        Plates
+
+    </button>
+
+    <button class="filter-btn"
+            data-filter="diya">
+
+        Diyas
+
+    </button>
+
+    
+    <button class="filter-btn"
+            data-filter="art">
+
+        Art
+
+    </button>
+
+</div>
+</div></section>
+<!--==================== SEARCH & FILTER END ====================-->
+<!--==================== GALLERY START ====================-->
+<section class="gallery-section" id="gallery">
+
+    <div class="container">
+
+        <div class="gallery-grid">
+
+            <!-- Card 1 -->
+
+            <div class="gallery-item"
+                data-category="pots"
+                data-name="Clay Pot">
+
+                <img src="images/gallery/gallery-1.jpg" class="gallery-img"
+                    alt=" Clay Pot">
+
+                <div class="gallery-overlay">
+
+                    <span class="category">Pot</span>
+
+                    <h3>Handmade Clay Pot</h3>
+
+        <p>Handcrafted Premium Pottery</p>
+
+                    <div class="gallery-icons"></div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="gallery-item"
+                data-category="cups"
+                data-name="Kulhad Tea Cup">
+
+                <img src="images/gallery/gallery-2.jpg" class="gallery-img"
+                    alt="Kulhad Tea Cup">
+
+                <div class="gallery-overlay">
+
+                    <span class="category">Kulhad</span>
+
+                    <h3>Kulhad Tea Cup</h3>
+
+                    <p>Eco-friendly handcrafted kulhad for an authentic tea experience.</p>
+
+                    <div class="gallery-icons"></div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="gallery-item"
+                data-category="vases"
+                data-name="Terracotta Vase">
+
+                <img src="images/gallery/gallery-3.jpg" class="gallery-img"
+                    alt="Terracotta Vase">
+
+                <div class="gallery-overlay">
+
+                    <span class="category">Vase</span>
+
+                    <h3>Terracotta Vase</h3>
+
+                    <p>Elegant handcrafted vase designed for modern home interiors.</p>
+
+                    <div class="gallery-icons"></div>
+
+                </div>
+
+            </div>
+             <!-- Card 21 -->
+
+            <div class="gallery-item"
+                data-category="vases"
+                data-name="Terracotta Vase">
+
+                <img src="images/gallery/gallery-21.jpg" class="gallery-img"
+                    alt="Terracotta Vase">
+
+                <div class="gallery-overlay">
+
+                    <span class="category">Vase</span>
+
+                    <h3>Terracotta Vase</h3>
+
+                    <p>Elegant handcrafted vase designed for modern home interiors.</p>
+
+                    <div class="gallery-icons"></div>
+
+                </div>
+
+            </div>
+ <!-- Card 22 -->
+
+            <div class="gallery-item"
+                data-category="vases"
+                data-name="Terracotta Vase">
+
+                <img src="images/gallery/gallery-22.jpg" class="gallery-img"
+                    alt="Terracotta Vase">
+
+                <div class="gallery-overlay">
+
+                    <span class="category">Vase</span>
+
+                    <h3>Terracotta Vase</h3>
+
+                    <p>Elegant handcrafted vase designed for modern home interiors.</p>
+
+                    <div class="gallery-icons"></div>
+
+                </div>
+
+            </div>
+            <!-- Card 4 -->
+
+            <div class="gallery-item"
+                data-category="vases"
+                data-name="Clay Dinner Plate">
+
+                <img src="images/gallery/gallery-4.jpg" class="gallery-img"
+                    alt="Clay Dinner Plate">
+
+                <div class="gallery-overlay">
+
+                    <span class="category">Plate</span>
+
+                    <h3>Clay Dinner Plate</h3>
+
+                    <p>Minimal handcrafted ceramic plate perfect for everyday dining.</p>
+
+                    <div class="gallery-icons"></div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 5 -->
+
+            <div class="gallery-item"
+                data-category="diya"
+                data-name="Festival Clay Diya">
+
+                <img src="images/gallery/gallery-5.jpg" class="gallery-img"
+                    alt="Festival Clay Diya">
+
+                <div class="gallery-overlay">
+
+                    <span class="category">Diya</span>
+
+                    <h3>Festival Clay Diya</h3>
+
+                    <p>Beautiful handmade diya crafted for festive celebrations.</p>
+
+                    <div class="gallery-icons"></div>
+
+                </div>
+
+            </div>
+             <!-- Card 18 -->
+
+            <div class="gallery-item"
+                data-category="diya"
+                data-name="Festival Clay Diya">
+
+                <img src="images/gallery/gallery-18.jpg" class="gallery-img"
+                    alt="Festival Clay Diya">
+
+                <div class="gallery-overlay">
+
+                    <span class="category">Diya</span>
+
+                    <h3>Festival Clay Diya</h3>
+
+                    <p>Beautiful handmade diya crafted for festive celebrations.</p>
+
+                    <div class="gallery-icons"></div>
+
+                </div>
+
+            </div>
+<!-- Card 19-->
+
+            <div class="gallery-item"
+                data-category="diya"
+                data-name="Festival Clay Diya">
+
+                <img src="images/gallery/gallery-19.jpg" class="gallery-img"
+                    alt="Festival Clay Diya">
+
+                <div class="gallery-overlay">
+
+                    <span class="category">Diya</span>
+
+                    <h3>Festival Clay Diya</h3>
+
+                    <p>Beautiful handmade diya crafted for festive celebrations.</p>
+
+                    <div class="gallery-icons"></div>
+
+                </div>
+
+            </div>
+<!-- Card 20-->
+
+            <div class="gallery-item"
+                data-category="diya"
+                data-name="Festival Clay Diya">
+
+                <img src="images/gallery/gallery-20.jpg" class="gallery-img"
+                    alt="Festival Clay Diya">
+
+                <div class="gallery-overlay">
+
+                    <span class="category">Diya</span>
+
+                    <h3>Festival Clay Diya</h3>
+
+                    <p>Beautiful handmade diya crafted for festive celebrations.</p>
+
+                    <div class="gallery-icons"></div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 6 -->
+
+            <div class="gallery-item"
+                data-category="pots"
+                data-name="Decorative Pot">
+
+                <img src="images/gallery/gallery-6.jpg" class="gallery-img"
+                    alt="Decorative Pot">
+
+                <div class="gallery-overlay">
+
+                    <span class="category">Pot</span>
+
+                    <h3>Decorative Pot</h3>
+
+                    <p>Premium handcrafted decorative pot with timeless artisan beauty.</p>
+
+                    <div class="gallery-icons"></div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 7 -->
+
+            <div class="gallery-item"
+                data-category="cups"
+                data-name="Ceramic Coffee Mug">
+
+                <img src="images/gallery/gallery-7.jpg" class="gallery-img"
+                    alt="Ceramic Coffee Mug">
+
+                <div class="gallery-overlay">
+
+                    <span class="category">Mug</span>
+
+                    <h3>Ceramic Coffee Mug</h3>
+
+                    <p>Elegant handmade mug crafted for a warm coffee experience.</p>
+
+                    <div class="gallery-icons"></div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 8 -->
+
+            <div class="gallery-item"
+                data-category="vases"
+                data-name="Flower Vase">
+
+                <img src="images/gallery/gallery-8.jpg" class="gallery-img"
+                    alt="Flower Vase">
+
+                <div class="gallery-overlay">
+
+                    <span class="category">Vase</span>
+
+                    <h3>Flower Vase</h3>
+
+                    <p>Stylish handcrafted vase perfect for fresh flowers and décor.</p>
+
+                    <div class="gallery-icons"></div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 9 -->
+
+            <div class="gallery-item"
+                data-category="plates"
+                data-name="Serving Plate">
+
+                <img src="images/gallery/gallery-9.jpg" class="gallery-img"
+                    alt="Serving Plate">
+
+                <div class="gallery-overlay">
+
+                    <span class="category">Plate</span>
+
+                    <h3>Serving Plate</h3>
+
+                    <p>Handcrafted serving plate blending elegance with functionality.</p>
+
+                    <div class="gallery-icons"></div>
+
+                </div>
+
+            </div>
+             <!-- Card 23 -->
+
+            <div class="gallery-item"
+                data-category="plates"
+                data-name="Serving Plate">
+
+                <img src="images/gallery/gallery-23.jpg" class="gallery-img"
+                    alt="Serving Plate">
+
+                <div class="gallery-overlay">
+
+                    <span class="category">Plate</span>
+
+                    <h3>Serving Plate</h3>
+
+                    <p>Handcrafted serving plate blending elegance with functionality.</p>
+
+                    <div class="gallery-icons"></div>
+
+                </div>
+
+            </div>
+             <!-- Card 24 -->
+
+            <div class="gallery-item"
+                data-category="plates"
+                data-name="Serving Plate">
+
+                <img src="images/gallery/gallery-24.jpg" class="gallery-img"
+                    alt="Serving Plate">
+
+                <div class="gallery-overlay">
+
+                    <span class="category">Plate</span>
+
+                    <h3>Serving Plate</h3>
+
+                    <p>Handcrafted serving plate blending elegance with functionality.</p>
+
+                    <div class="gallery-icons"></div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 10 -->
+
+            <div class="gallery-item"
+                data-category="diya"
+                data-name="Designer Diya">
+
+                <img src="images/gallery/gallery-10.jpg" class="gallery-img"
+                    alt="Designer Diya">
+
+                <div class="gallery-overlay">
+
+                    <span class="category">Diya</span>
+
+                    <h3>Designer Diya</h3>
+
+                    <p>Designer clay diya adding warmth and charm to every festival.</p>
+
+                    <div class="gallery-icons"></div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 11 -->
+
+            <div class="gallery-item"
+                data-category="planter"
+                data-name="Garden Planters">
+
+                <img src="images/gallery/gallery-11.jpg" class="gallery-img"
+                    alt="Garden Planter">
+
+                <div class="gallery-overlay">
+
+                    <span class="category">Planter</span>
+
+                    <h3>Garden Planter</h3>
+
+                    <p>Natural terracotta planter designed for healthy indoor plants.</p>
+
+                    <div class="gallery-icons"></div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 12 -->
+
+            <div class="gallery-item"
+                data-category="art"
+                data-name="Clay Sculpture">
+
+                <img src="images/gallery/gallery-12.jpg" class="gallery-img"
+                    alt="Clay Sculpture">
+
+                <div class="gallery-overlay">
+
+                    <span class="category">Art</span>
+
+                    <h3>Clay Sculpture</h3>
+
+                    <p>Unique handcrafted clay artwork reflecting timeless craftsmanship.</p>
+
+                    <div class="gallery-icons"></div>
+
+                </div>
+
+            </div>
+
+             <!-- Card 13 -->
+
+            <div class="gallery-item"
+                data-category="art"
+                data-name="Clay Sculpture">
+
+                <img src="images/gallery/gallery-13.jpg" class="gallery-img"
+                    alt="Clay Sculpture">
+
+                <div class="gallery-overlay">
+
+                    <span class="category">Art</span>
+
+                    <h3>Clay Sculpture</h3>
+
+                    <p>Unique handcrafted clay artwork reflecting timeless craftsmanship.</p>
+
+                    <div class="gallery-icons"></div>
+
+                </div>
+
+            </div>
+<!-- Card 14 -->
+
+            <div class="gallery-item"
+                data-category="art"
+                data-name="Clay Sculpture">
+
+                <img src="images/gallery/gallery-14.jpg" class="gallery-img"
+                    alt="Clay Sculpture">
+
+                <div class="gallery-overlay">
+
+                    <span class="category">Art</span>
+
+                    <h3>Clay Sculpture</h3>
+
+                    <p>Unique handcrafted clay artwork reflecting timeless craftsmanship.</p>
+
+                    <div class="gallery-icons"></div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 15 -->
+
+            <div class="gallery-item"
+                data-category="art"
+                data-name="Clay Sculpture">
+
+                <img src="images/gallery/gallery-15.jpg" class="gallery-img"
+                    alt="Clay Sculpture">
+
+                <div class="gallery-overlay">
+
+                    <span class="category">Art</span>
+
+                    <h3>Clay Sculpture</h3>
+
+                    <p>Unique handcrafted clay artwork reflecting timeless craftsmanship.</p>
+
+                    <div class="gallery-icons"></div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 16 -->
+
+            <div class="gallery-item"
+                data-category="art"
+                data-name="Clay Sculpture">
+
+                <img src="images/gallery/gallery-16.jpg" class="gallery-img"
+                    alt="Clay Sculpture">
+
+                <div class="gallery-overlay">
+
+                    <span class="category">Art</span>
+
+                    <h3>Clay Sculpture</h3>
+
+                    <p>Unique handcrafted clay artwork reflecting timeless craftsmanship.</p>
+
+                    <div class="gallery-icons"></div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 17-->
+
+            <div class="gallery-item"
+                data-category="art"
+                data-name="Clay Sculpture">
+
+                <img src="images/gallery/gallery-17.jpg" class="gallery-img"
+                    alt="Clay Sculpture">
+
+                <div class="gallery-overlay">
+
+                    <span class="category">Art</span>
+
+                    <h3>Clay Sculpture</h3>
+
+                    <p>Unique handcrafted clay artwork reflecting timeless craftsmanship.</p>
+
+                    <div class="gallery-icons"></div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!--========== LIGHTBOX ==========-->
+
+<div class="lightbox" id="lightbox">
+
+    <span class="close">&times;</span>
+
+    <img id="lightbox-img">
+
+    <button class="prev">&#10094;</button>
+
+    <button class="next">&#10095;</button>
+
+</div>
+
+<!-- ==========================
+     Gallery Statistics
+=========================== -->
+<section class="gallery-stats">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Our Achievements</span>
+
+            <h2>Crafting Excellence Through Every Creation</h2>
+
+            <p>
+                Every handcrafted pottery piece reflects our dedication,
+                creativity, and passion for timeless craftsmanship.
+            </p>
+
+        </div>
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+
+                <h3 class="counter" data-target="2500">0</h3>
+
+                <p>Happy Customers</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3 class="counter" data-target="1200">0</h3>
+
+                <p>Handcrafted Products</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3 class="counter" data-target="25">0</h3>
+
+                <p>Years of Experience</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3 class="counter" data-target="50">0</h3>
+
+                <p>Skilled Artisans</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<script src="js/gallery.js"></script>
+
+</body>
+</html>

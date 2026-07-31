@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout | EarthCraft</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<section class="checkout">
+
+<div class="container">
+
+<h1>Checkout</h1>
+
+<div class="checkout-wrapper">
+
+<div class="billing">
+
+<h2>Billing Details</h2>
+<input type="text" id="name" placeholder="Full Name">
+
+<input type="email" id="email" placeholder="Email">
+
+<input type="text" id="mobile" placeholder="Mobile Number">
+
+<textarea id="address" placeholder="Address"></textarea>
+
+<input type="text" id="city" placeholder="City">
+
+<input type="text" id="state" placeholder="State">
+
+<input type="text" id="pincode" placeholder="Pincode">
+
+<select>
+
+<option>Cash On Delivery</option>
+
+<option>UPI</option>
+
+<option>Debit Card</option>
+
+<option>Credit Card</option>
+
+</select>
+
+</div>
+<div class="payment-method">
+
+    <h3>Select Payment Method</h3>
+
+    <label>
+        <input type="radio" name="payment" value="cod" checked>
+        Cash on Delivery
+    </label>
+
+    <label>
+        <input type="radio" name="payment" value="online">
+        Pay Online (Razorpay)
+    </label>
+
+</div>
+<div class="summary">
+
+<h2>Order Summary</h2>
+
+<div id="orderItems"></div>
+
+<hr>
+
+<div class="price-row">
+    <span>Subtotal</span>
+    <span id="subTotal">₹0</span>
+</div>
+
+<div class="price-row">
+    <span>Delivery</span>
+    <span id="delivery">₹50</span>
+</div>
+
+<div class="price-row">
+    <span>GST (18%)</span>
+    <span id="gst">₹0</span>
+</div>
+
+<div class="coupon-box">
+    <input type="text" id="coupon" placeholder="Coupon Code">
+    <button id="applyCoupon">Apply</button>
+</div>
+
+<div class="price-row total">
+    <strong>Total</strong>
+    <strong id="grandTotal">₹0</strong>
+</div>
+
+<button id="placeOrder">
+    Place Order
+</button>
+
+</div> <!-- summary -->
+
+</div> <!-- checkout-wrapper -->
+
+</div> <!-- container -->
+
+</section>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="js/checkout.js"></script>
+</body>
+</html>

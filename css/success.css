@@ -1,0 +1,15 @@
+.invoice-btn{
+    margin-top:20px;
+    padding:14px 28px;
+    background:#8B4513;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.invoice-btn:hover{
+    background:#6d3410;
+}
