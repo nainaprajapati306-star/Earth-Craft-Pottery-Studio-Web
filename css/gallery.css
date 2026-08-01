@@ -253,7 +253,7 @@ list-style:none;
     background:
     linear-gradient(rgba(0,0,0,.55),
     rgba(0,0,0,.55)),
-    url("../images/gallery/gallery-banner.jpg");
+    url("../images/about-banner.jpg");
 
     background-size:cover;
 
@@ -399,7 +399,7 @@ list-style:none;
     background:
     linear-gradient(rgba(0,0,0,.55),
     rgba(0,0,0,.55)),
-    url("../images/gallery/gallery-banner.jpg");
+    url("../images/about-banner.jpg");
 
     background-size:cover;
     background-position:center;
