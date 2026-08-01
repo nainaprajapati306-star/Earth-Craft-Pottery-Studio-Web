@@ -481,7 +481,7 @@ ABOUT BANNER
 .about-banner{
 
 height:500px;
-background:url("../images/about-banner.jpg");
+background:url("../Images/about-banner.jpg");
 background-size:cover;
 background-position:center;
 position:relative;
@@ -1285,7 +1285,7 @@ SHOP BANNER
 .shop-banner{
 
      height:350px;
-    background:url("../images/about-banner.jpg") center/cover no-repeat;
+    background:url("../Images/about-banner.jpg") center/cover no-repeat;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -2247,7 +2247,7 @@ transform:scale(.98);
     min-height:70vh;
 
     background:linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)),
-    url("../images/about-banner.jpg") center/cover no-repeat;
+    url("../Images/about-banner.jpg") center/cover no-repeat;
 
     display:flex;
     justify-content:center;
