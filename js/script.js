@@ -1373,3 +1373,43 @@ form.addEventListener("submit", async function(e) {
         message.style.color = "red";
     }
 });
+const form = document.getElementById("subscribe-form");
+const message = document.getElementById("subscribe-message");
+
+if (form) {
+    form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const btn = form.querySelector("button");
+        const originalText = btn.innerHTML;
+
+        btn.innerHTML = "Subscribing...";
+        btn.disabled = true;
+
+        try {
+            const response = await fetch(form.action, {
+                method: "POST",
+                body: new FormData(form),
+                headers: {
+                    Accept: "application/json"
+                }
+            });
+
+            if (response.ok) {
+                message.textContent = "🎉 Thank you for subscribing!";
+                message.style.color = "#4CAF50";
+                form.reset();
+            } else {
+                message.textContent = "❌ Subscription failed. Please try again.";
+                message.style.color = "#ff4d4d";
+            }
+
+        } catch (error) {
+            message.textContent = "⚠️ Network Error. Please try again.";
+            message.style.color = "#ff4d4d";
+        }
+
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+    });
+}

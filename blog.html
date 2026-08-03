@@ -412,8 +412,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
         <h3>Subscribe to our Newsletter</h3>
 
-       <form class="newsletter"
-      id="subscribe-form"
+      <form id="subscribe-form"
       action="https://formspree.io/f/mojggnpg"
       method="POST">
 
@@ -431,13 +430,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
 <p id="subscribe-message"></p>
 
+
+
     </div>
 
     <div class="footer-bottom">
 
         <p>
 
-            © 2026 EarthCraft Pottery Studio |
+            © 20
+            26 EarthCraft Pottery Studio |
             Made with ❤️ by EarthCraft
 
         </p>
@@ -445,31 +447,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     </div>
 
 </footer>
-<script>
-const form = document.getElementById("subscribe-form");
-const message = document.getElementById("subscribe-message");
-
-form.addEventListener("submit", async function(e) {
-    e.preventDefault();
-
-    const response = await fetch(form.action, {
-        method: "POST",
-        body: new FormData(form),
-        headers: {
-            "Accept": "application/json"
-        }
-    });
-
-    if (response.ok) {
-        message.innerHTML = "✅ Thank you for subscribing!";
-        message.style.color = "#8BC34A";
-        form.reset();
-    } else {
-        message.innerHTML = "❌ Subscription failed. Please try again.";
-        message.style.color = "red";
-    }
-});
-</script>
 <script src="js/blog.js"></script>
 
 </body>
