@@ -1348,3 +1348,28 @@ setInterval(()=>{
     showSlide(currentSlide);
 
 },4000);
+const form = document.getElementById("subscribe-form");
+const message = document.getElementById("subscribe-message");
+
+form.addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const data = new FormData(form);
+
+    const response = await fetch(form.action, {
+        method: "POST",
+        body: data,
+        headers: {
+            Accept: "application/json"
+        }
+    });
+
+    if (response.ok) {
+        message.innerHTML = "🎉 Thank you for subscribing!";
+        message.style.color = "#4CAF50";
+        form.reset();
+    } else {
+        message.innerHTML = "❌ Something went wrong. Please try again.";
+        message.style.color = "red";
+    }
+});

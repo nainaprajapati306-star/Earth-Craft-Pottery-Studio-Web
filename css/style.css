@@ -3063,3 +3063,9 @@ cursor:pointer;
     }
 
 }
+#subscribe-message{
+    margin-top:10px;
+    color:#4CAF50;
+    font-size:15px;
+    font-weight:500;
+}
